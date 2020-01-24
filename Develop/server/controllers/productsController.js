@@ -4,6 +4,7 @@ const axios = require("axios");
 module.exports = {
 
   findCart: function(req, res) {
+    console.log("findCart")
     db.Product
       .find(req.query)
       .sort({ date: -1 })
